@@ -9,7 +9,6 @@
     "postinstall": "npm run build",
     "precommit": "prettier --write --single-quote src/*.ts && git add .",
     "start": "node src/server.js | pino",
-    "start-dev": "nodemon -e ts -x ts-node src/server.ts | pino",
     "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js",
     "clean": "find . -name '*.js' -not -path './node_modules/*' ! -name 'gulpfile.js' ! -name 'webpack.config.js'| xargs rm; find . -name '*.map' -not -path './node_modules/*' | xargs rm; rm -rf dist; rm -rf .serverless; rm -rf .webpack;"
   },
@@ -40,7 +39,6 @@
     "chai-http": "^4.3.0",
     "husky": "~0.14.3",
     "mocha": "^6.2.0",
-    "nodemon": "~1.18.3",
     "nodeshift": "~1.9.0",
     "prettier": "~1.13.7",
     "ts-node": "~7.0.0",
