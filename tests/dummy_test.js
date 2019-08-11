@@ -1,4 +1,0 @@
-
-describe('Dummy tests', function() {
-
-})

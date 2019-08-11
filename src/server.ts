@@ -47,3 +47,5 @@ app.listen(PORT, (err: any) => {
 
   log.info(`server listening on port ${PORT}`);
 });
+
+export default app;
