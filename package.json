@@ -6,7 +6,6 @@
   "scripts": {
     "build": "tsc",
     "nodeshift": "nodeshift",
-    "prestart": "npm run build",
     "precommit": "prettier --write --single-quote src/*.ts && git add .",
     "start": "node src/server.js | pino",
     "test": "./node_modules/mocha/bin/_mocha",
