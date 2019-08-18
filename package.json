@@ -9,7 +9,7 @@
     "prestart": "npm run build",
     "precommit": "prettier --write --single-quote src/*.ts && git add .",
     "start": "node src/server.js | pino",
-    "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js",
+    "test": "./node_modules/mocha/bin/_mocha",
     "clean": "find . -name '*.js' -not -path './node_modules/*' ! -name 'gulpfile.js' ! -name 'webpack.config.js'| xargs rm; find . -name '*.map' -not -path './node_modules/*' | xargs rm; rm -rf dist; rm -rf .serverless; rm -rf .webpack;"
   },
   "repository": {
